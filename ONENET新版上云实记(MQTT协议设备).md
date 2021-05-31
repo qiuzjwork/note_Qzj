@@ -143,7 +143,7 @@ token生成参数中的key使用我们获得的设备密钥，此处参考官方
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | clientId | D\_Mqtt_1                                                                                                                                                  | 8        |
 | username | Ywsx1Okw32                                                                                                                                                | 10       |
-| password | <div style= "width: 400pt">version=2018-10-31&res=products%2FYwsx1Okw32%2Fdevices%2FD_Mqtt_1&et=2561396583&method=md5&sign=9V%2FBR0a8GTMkQhYXwXq9DQ%3D%3D | 126      |
+| password | version=2018-10-31&res=products%2FYwsx1Okw32%2Fdevices%2FD_Mqtt_1&et=2561396583&method=md5&sign=9V%2FBR0a8GTMkQhYXwXq9DQ%3D%3D | 126      |
 
 # 设备设置与通信
 
@@ -247,7 +247,7 @@ v3.1.1协议原文，和设备终端接入协议，详见a资料中的链接6
 |          | Username长度                     | 00 0A       |                                                                                                                                                           | 两个字节，用于规定后续多少个字节是Username的内容                                       |
 |          | Username                         |             | Ywsx1Okw32                                                                                                                                                | Username的UTF-8字符串                                                                  |
 |          | Password长度                     | 00 7E       |                                                                                                                                                           | 两个字节用于规定后续多少个字节是Password的内容                                         |
-|          | Password                         |             | <div style= "width: 400pt">version=2018-10-31&res=products%2FYwsx1Okw32%2Fdevices%2FD_Mqtt_1&et=2561396583&method=md5&sign=9V%2FBR0a8GTMkQhYXwXq9DQ%3D%3D | Password的UTF-8字符串                                                                  |
+|          | Password                         |             | version=2018-10-31&res=products%2FYwsx1Okw32%2Fdevices%2FD_Mqtt_1&et=2561396583&method=md5&sign=9V%2FBR0a8GTMkQhYXwXq9DQ%3D%3D | Password的UTF-8字符串                                                                  |
 
 通过计算，可得剩余长度值为10+2+8+2+10+2+126 = 160
 
